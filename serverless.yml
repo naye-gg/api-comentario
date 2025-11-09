@@ -10,7 +10,7 @@ provider:
     role: arn:aws:iam::306083006368:role/LabRole	
   environment:
     TABLE_NAME: ${sls:stage}-t_comentarios
-    BUCKET_NAME: ${sls:stage}-comentarios-ingesta
+    BUCKET_NAME: api-comentarios-prueba-ngg-${sls:stage}
 functions:
   crear:
     handler: comentario.lambda_handler
